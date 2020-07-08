@@ -1,7 +1,7 @@
 from tkinter import *
 
 root= Tk()
-root.title("chat bot")
+root.title("Jorge o robô")
 root.geometry('400x500')
 root.configure(bg='#393e46')
 
@@ -20,5 +20,9 @@ button.place(x = 15, y= 420, height = 30, width = 105)
 
 scrollbar = Scrollbar(root, command  = chatWindow.yview())
 scrollbar.place(x=375, y=15, height = 385)
+
+
+
+
 
 root.mainloop()
