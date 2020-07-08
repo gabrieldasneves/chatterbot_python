@@ -3,10 +3,20 @@ from chatterbot import ChatBot
 from tkinter import *
 
 root= Tk()
-root.title("Jorge o robô")
+root.title("Jorge, o robô")
 root.geometry('400x500')
 root.configure(bg='#393e46')
 conversation = ["oi, humano","ola, humano","bom dia", "como vai?", "eu estou bem"]
+
+def send_message():
+    
+        question = mensagemWindow.get('1.0', END)
+        chatWindow.insert( END,"\n Vocẽ =>" + question + "\n")
+        response = bot.get_response(question)
+        
+        chatWindow.insert( END,"\n Jorge =>" + str(response) + "\n")
+        
+            
 
 bot = ChatBot("Jorge")
 
@@ -25,22 +35,6 @@ button.place(x = 15, y= 420, height = 30, width = 105)
 
 scrollbar = Scrollbar(root, command  = chatWindow.yview())
 scrollbar.place(x=375, y=15, height = 385)
-
-
-#-------------logica a ser trabalhada-----------------#
-
-while True:
-    question = input("você: ")
-    response = bot.get_response(question)
-    if float(response.confidence) > 0.5 :
-        print("Jorge: ", response)
-    else:
-        print("nao entendi...")
-
-def send_message():
-    message = 'voce: ' + mensagemWindow.get('1.0', END)
-    chatWindow.insert( END,"\n" + message)
-
 
 
 root.mainloop()
