@@ -2,30 +2,20 @@
 Project that aims to develop a chatter bot with **python**.
 
 ## Motivation
-I apreciate to write about the things I find interesting and important but, not everything should be written in a network geared towards the professional area, right?
+Python's rise among developers around the world has been documented by several well-known programming-language indexes. Due to it,this little project aims to pratice Python while implementing a chatterbot.
 
-I went after platforms like Medium and I felt that something was bothering me.
+## Theory
 
-"I know how to code, so I could make a blog by myself, I don't need to rely on a platform and I can even choose the style I want!"
+A chatbot is a computer program that mimics human conversation. Whether it’s text- or voice-based, a chatbot can automate communication with customers on behalf of your business.
 
-Soon, I went after options to develop the Blog and discovered Jekyll. A Ruby on Rails-based tool for developing static websites.
-
-There is still a lot to learn in this tool.
-
-
-## Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. - 
-
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+These programs do complex tasks and work more like virtual assistants. They use ML and NLP to understand context, personalize communication, and learn as they go. They can also predict the types of issues customers might have and offer proactive solutions.
  
-## Screenshots
-Include logo/demo screenshot etc.
+## Interface
+
+The interface was developed im python and you can find it's code in the **gui_bot.py** file.
+It looks like:
+
+
 
 ## Tech/framework used
 Ex. -
